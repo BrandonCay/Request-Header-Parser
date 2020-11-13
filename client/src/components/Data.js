@@ -19,7 +19,7 @@ class Data extends React.Component{
 
     componentDidMount(){
         //should create sting array to store the names of categories
-        fetch('http://localhost:4000/api/data')
+        fetch('/api/data')
             .then((res)=>res.json())
             .then((data)=>{
                 const chosen=this.props.location.state.display;
